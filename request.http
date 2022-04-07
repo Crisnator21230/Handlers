@@ -1,0 +1,42 @@
+###
+POST http://localhost:5000/api/v2/series/serie HTTP/1.1
+Content-Type: application/json
+
+{
+  "serie":"Dev de software",
+  "number_seasons":2,
+  "original_language":"Es",
+  "features_seasons":{
+    "season_number":2,
+    "season_name":"Corte 2",
+    "premier_date":"2022-04-02",
+    "cast": ["Actor1","Actor2","Actor3","Actor4"]
+
+  }
+}
+
+###
+GET http://localhost:5000/api/v2/series HTTP/1.1
+
+###
+GET http://localhost:5000/api/v2/series/624f3b7f1048ffc2878a380c HTTP/1.1
+
+###
+DELETE http://localhost:5000/api/v2/series/624f3b7f1048ffc2878a380c HTTP/1.1
+
+###
+PUT http://localhost:5000/api/v2/series/624f3cde19164591f6af70f5 HTTP/1.1
+Content-Type: application/json
+
+{
+  "serie":"Dev de software edicion",
+  "number_seasons":2,
+  "original_language":"Es",
+  "features_seasons":{
+    "season_number":2,
+    "season_name":"Corte 2",
+    "premier_date":"2022-04-02",
+    "cast": ["Actor1","Actor2","Actor3","Actor4"]
+
+  }
+}
